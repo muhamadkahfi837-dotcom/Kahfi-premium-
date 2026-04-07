@@ -1,0 +1,58 @@
+body {
+    font-family: Arial;
+    background: #0f172a;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    margin: 20px;
+}
+
+.form, .checkout, .payment {
+    background: #1e293b;
+    padding: 20px;
+    margin: 50px auto;
+    width: 300px;
+    border-radius: 10px;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px;
+}
+
+button {
+    padding: 10px;
+    margin: 10px;
+    background: #38bdf8;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background: #1e293b;
+    margin: 15px;
+    padding: 15px;
+    width: 220px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}

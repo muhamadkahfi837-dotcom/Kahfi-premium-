@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login - Toko Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="form">
+    <h2>Login</h2>
+    <input type="text" id="user" placeholder="Username">
+    <input type="password" id="pass" placeholder="Password">
+    <button onclick="login()">Login</button>
+    <p>Belum punya akun? <a href="register.html">Daftar</a></p>
+</div>
+
+<script>
+function login(){
+    let u = document.getElementById("user").value;
+    let p = document.getElementById("pass").value;
+
+    if(u === localStorage.getItem("user") && p === localStorage.getItem("pass")){
+        alert("Login berhasil!");
+        window.location.href="index.html";
+    } else {
+        alert("Login gagal!");
+    }
+}
+</script>
+
+</body>
+</html>

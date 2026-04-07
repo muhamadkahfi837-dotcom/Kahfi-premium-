@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kahfi Premium Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Game Store</h1>
+
+<div class="menu">
+
+    <div class="card">
+        <img src="images.webp">
+        <h3>Hogwarts Legacy</h3>
+        <p>Rp 750.000</p>
+        <button onclick="beli('Hogwarts Legacy',750000)">Beli</button>
+    </div>
+
+    <div class="card">
+        <img src="images (1).webp">
+        <h3>Cyberpunk 2077</h3>
+        <p>Rp 650.000</p>
+        <button onclick="beli('Cyberpunk 2077',650000)">Beli</button>
+    </div>
+
+    <div class="card">
+        <img src="download.webp">
+        <h3>Red Dead Redemption 2</h3>
+        <p>Rp 700.000</p>
+        <button onclick="beli('RDR2',700000)">Beli</button>
+    </div>
+
+    <div class="card">
+        <img src="images (2).webp">
+        <h3>Final Fantasy VII Remake</h3>
+        <p>Rp 800.000</p>
+        <button onclick="beli('FF7 Remake',800000)">Beli</button>
+    </div>
+
+    <div class="card">
+        <img src="download.jpeg">
+        <h3>Forza Horizon 5</h3>
+        <p>Rp 600.000</p>
+        <button onclick="beli('Forza Horizon 5',600000)">Beli</button>
+    </div>
+
+</div>
+
+<script>
+function beli(nama, harga){
+    localStorage.setItem("game", nama);
+    localStorage.setItem("harga", harga);
+    window.location.href="checkout.html";
+}
+</script>
+
+</body>
+</html>

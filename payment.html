@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pembayaran</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Pembayaran</h1>
+
+<div class="payment">
+    <button onclick="bayar('DANA')">DANA</button>
+    <button onclick="bayar('OVO')">OVO</button>
+    <button onclick="bayar('E-Wallet')">E-Wallet</button>
+</div>
+
+<script>
+function bayar(method){
+    alert("Pembayaran berhasil menggunakan " + method);
+    localStorage.clear();
+    window.location.href="index.html";
+}
+</script>
+
+</body>
+</html>
